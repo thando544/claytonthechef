@@ -1736,10 +1736,27 @@ iframe {
     display: grid;
     grid-template-columns: auto auto;
   }
+
+  .logovariation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  .online-shop{
+    position: absolute;
+    left: 14.7rem;
+    top: 10px;
+  }
 }
 
 /*==============================extra small screens=================================*/
-@media (max-width: 480px) {
+@media (max-width: 490px) {
 
   .logo {
     margin-left: 12px;
@@ -1921,7 +1938,7 @@ iframe {
   }
 
   .banner {
-height: 55vh;
+height: 48vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -1929,8 +1946,15 @@ width: 100%;
 
   }
 
-  .navbar {
+  video{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-view-box: auto;
+  }
 
+  .navbar {
+height: 10vh;
     width: 100%;
     padding: 0px 0px 0px 0px;
   }
@@ -1977,9 +2001,40 @@ width: 100%;
     background-color: #ff0000;
     color: #fff;
   }
+
+    .online-shop{
+    position: absolute;
+    left: 11.7rem;
+    top: 10px;
+  }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px){
+      .online-shop{
+    position: absolute;
+    left: 9.7rem;
+    top: 10px;
+  }
+
+   .banner{
+    width: 100%;
+    height: auto;
+  margin-top: 10px;
+  }
+
+
+
+  video{
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .navbar{
+    height: 8vh;
+  }
+}
+
+@media (max-width: 390px) {
   .mentoring-section {
     padding: 12px 12px 0px 12px;
     width: 90%;
@@ -2033,5 +2088,32 @@ width: 100%;
     background: linear-gradient(to right, #fdfbfb, #ebedee);
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
+  }
+
+      .online-shop{
+    position: absolute;
+    left: 7.7rem;
+    top: 10px;
+  }
+
+  .modal{
+    width: 80%;
+  }
+
+  .banner{
+    width: 100%;
+    height: 33vh;
+  margin-top: 10px;
+  }
+
+
+
+  video{
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .navbar{
+    height: 8vh;
   }
 }
