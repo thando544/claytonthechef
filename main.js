@@ -13,6 +13,13 @@ const toggle = document.getElementById('menu-toggle');
     socials.classList.toggle('show');
   });
 
+
+  window.onclick = (e) => {
+  if (e.target === navbar) {
+    modal.style.display = "none";
+  }
+};
+
   //*==========================Scroll behavior==============================*/
   let lastScrollTop = 0;
 
@@ -262,4 +269,65 @@ document.getElementById("payment-form").addEventListener("submit", function (e) 
 
 //open cart
 //open cart//
+// Get elements
+const modal = document.getElementById("teamModal");
+const openBtn = document.getElementById("openTeamModal");
+const closeBtn = document.querySelector(".close");
 
+// Open modal
+openBtn.onclick = () => {
+  modal.style.display = "flex";
+};
+
+// Close modal
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
+
+// Close when clicking outside modal content
+window.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+
+document.querySelectorAll('.read-more-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.team-card');
+    const shortBio = card.querySelector('.bio.short');
+    const fullBio = card.querySelector('.bio.full');
+
+    const isExpanded = fullBio.style.display === 'block';
+
+    if (isExpanded) {
+      fullBio.style.display = 'none';
+      shortBio.style.display = 'block';
+      button.textContent = 'Read more';
+    } else {
+      fullBio.style.display = 'block';
+      shortBio.style.display = 'none';
+      button.textContent = 'Close';
+    }
+  });
+});
+
+
+/* owl carousel*/
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
+    }
+  });
+});
+
+$('.owl-carousel').trigger('refresh.owl.carousel');

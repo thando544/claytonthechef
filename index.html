@@ -20,6 +20,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="contact.html" href="contact.html">
 
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 <body>
     <nav class="navbar">
@@ -39,14 +42,14 @@
                     <button class="dropdown-toggle">Main Chef's Shop<box-icon type='solid' name='down-arrow'></box-icon></button>
                     <div class="dropdown-menu">
                         <button onclick="openModal('modal1')">Chef Lindsy's Shop🧑‍🍳</button>
-                        <a href="#http://127.0.0.1:5500/shop.html">Shop</a>
+                   
                     </div>
                 </div>
             </li>
         </ul>
 
         <div class="cart-icon">
-            <box-icon name='cart-add'></box-icon>
+            <ion-icon name="cart-outline"></ion-icon>
             <span class="cart-count" id="cart-count">0</span>
           </div>
 
@@ -518,17 +521,79 @@
 <!--====================================footer=====================================-->
 <footer class="chef-footer">
     <div class="footer-content">
-      <!-- Branding Block -->
-      
-      <!-- Social Media Links -->
-      
-      <!-- Logos -->
-      <div class="footer-logo">
-        <img src="images/logo1.svg" alt="Logo 1">
-        <img src="images/logo2.svg" alt="Logo 2">
-        <img src="images/logo3.svg" alt="Logo 3">
+    <!-- Trigger Button -->
+<button id="openTeamModal">Meet Our Founders</button>
+
+<!-- Modal Structure -->
+<div id="teamModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Founding Team</h2>
+   <div class="owl-carousel">
+  <div class="item">
+    <!-- Card 3 -->
+      <div class="team-card">
+        <img src="images/lindsy.svg" alt="Anton Tremsin" />
+        <h3 class="name orange">Anton Tremsin</h3>
+        <p class="title">Chief Technical Officer</p>
+        <p class="bio">
+          Anton has 30 years of research experience at UC Berkeley and the University of Leicester,
+          with 250+ scholarly publications. He leads engineering innovation and technical accuracy at Torch.
+        </p>
+        <button class="read-more">Close</button>
       </div>
-    </div>
+  </div>
+  <div class="item">
+     <div class="team-card">
+        <img src="images/brian.svg" alt="Anton Tremsin" />
+        <h3 class="name orange">Brian</h3>
+        <p class="title">Chief Technical Officer</p>
+        <p class="bio">
+         I would like to express my deepest appreciation to Chef Brian, my culinary mentor and godfather, who recognized my potential at a young age and entrusted me with a management-level role at just 21. His belief in me and his unwavering support have been instrumental in shaping my journey, particularly through my time at Cresta Hotels, where his guidance as Group Executive Chef played a pivotal role in my growth.
+
+Even today, his mentorship continues to inspire and refine my craft, and it is a true honor to step into the position he once held 15 years ago as Executive Chef at Victoria Falls Safari Collection. Chef Brian, your dedication, leadership, and generosity have left an indelible mark on my career, and I am profoundly grateful for the impact you have had on my journey.
+
+Thank you for everything.
+        </p>
+        <button class="read-more">Close</button>
+      </div></div>
+  <div class="item"> <div class="team-card">
+        <img src="images/keneth.jpg" alt="Anton Tremsin" />
+        <h3 class="name orange">Anton Tremsin</h3>
+        <p class="title">Chief Technical Officer</p>
+        <p class="bio">
+          Anton has 30 years of research experience at UC Berkeley and the University of Leicester,
+          with 250+ scholarly publications. He leads engineering innovation and technical accuracy at Torch.
+        </p>
+        <button class="read-more">Close</button>
+      </div></div>
+  <div class="item"> <div class="team-card">
+        <img src="images/tricose.jpg" alt="Anton Tremsin" />
+        <h3 class="name orange">Anton Tremsin</h3>
+        <p class="title">Chief Technical Officer</p>
+        <p class="bio">
+          Anton has 30 years of research experience at UC Berkeley and the University of Leicester,
+          with 250+ scholarly publications. He leads engineering innovation and technical accuracy at Torch.
+        </p>
+        <button class="read-more">Close</button>
+      </div></div>
+
+        <div class="item"> <div class="team-card">
+        <img src="images/pawl.jpg" alt="Anton Tremsin" />
+        <h3 class="name orange">Paul</h3>
+        <p class="title">Chief Technical Officer</p>
+        <p class="bio">
+          Anton has 30 years of research experience at UC Berkeley and the University of Leicester,
+          with 250+ scholarly publications. He leads engineering innovation and technical accuracy at Torch.
+        </p>
+        <button class="read-more">Close</button>
+      </div></div>
+  <!-- Add more items -->
+</div>
+
+
+  </div>
+</div>
   
     <!-- Footer Bottom -->
     <div class="footer-bottom">
@@ -541,7 +606,10 @@
 
 
  
-
+  <!-- jQuery (required) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <script src="https://js.stripe.com/v3/"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

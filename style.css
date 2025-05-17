@@ -132,6 +132,14 @@ img {
     color: var(--secondary-color);
 }
 
+
+.grat{
+  background-color: transparent;
+  color: #000000;
+  font-size: 1.1rem;
+cursor: pointer;
+  border: none;
+}
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -183,7 +191,10 @@ img {
 
 .mordal-images img{
   width: 200px;
-  height: 400px;
+  height: 500px;
+}
+.modal-content .shop-style{
+  background-color: #007BFF;
 }
 
 .nav__socials a {
@@ -229,9 +240,10 @@ img {
 }
 
 .product-card {
-  background: #f9f9f9;
+  background: #931b1b;
   padding: 1rem;
   border-radius: 8px;
+  height: 500px;
   text-align: center;
   transition: box-shadow 0.3s;
   border: 1px solid #e0e0e0;
@@ -305,13 +317,105 @@ img {
 }
 
 
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.modal-content {
+  background: #2e2e2e;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 1000px;
+  color: white;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Team Cards */
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-card {
+  background: #3b3b3b;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  color: white;
+  text-align: center;
+  flex: 1;
+}
+
+.team-card img {
+  border-radius: 12px;
+  width: 170px;
+  object-position: center top;
+  height: 170px;
+  object-fit: contain;
+}
+
+.name {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.orange {
+  color: rgb(255, 72, 0);
+}
+
+.title {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.bio {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.read-more {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
 /*===================control the slider===============*/
 
 .modal {
   display: none;
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(187, 101, 101, 0.173);
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -325,8 +429,8 @@ img {
   width: 90%;
   z-index: 99999;
   position: relative;
- height: 60vh;
- top: 30px;
+ height: 79vh;
+ top: 50px;
   overflow-y: auto;
 }
 
