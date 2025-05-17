@@ -159,3 +159,28 @@ form button:hover {
   padding: 20px;
   border-radius: 10px;
 }
+
+
+/* break points*/
+@media (max-width: 485px){
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid red;
+    }
+
+    .contact-form {
+
+  min-width: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+form .row{
+    display: flex;
+    flex-direction: column;
+}
+
+}
