@@ -33,6 +33,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 20px;
+    height: 9vh;
     align-items: center;
     padding: 1.5rem 5%;
     background-color: white;
@@ -1058,82 +1059,6 @@ iframe {
   background-color: #000000;
 }
 
-.overlay-text {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.contact-section {
-  width: 100%;
-  padding: 40px 20px;
-  background-color: #fff8f0;
-  font-family: 'Segoe UI', sans-serif;
-  color: #3a2f27;
-}
-
-.contact-section h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 2em;
-  color: #8b4513;
-}
-
-.contact-section form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-section label {
-  display: block;
-  margin-top: 15px;
-  font-weight: 600;
-}
-
-.contact-section input,
-.contact-section textarea {
-  width: 90%;
-  resize: none;
-  padding: 12px 14px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1em;
-  background-color: #fffefc;
-  transition: border 0.3s;
-}
-
-.contact-section input:focus,
-.contact-section textarea:focus {
-  border-color: #d2691e;
-  outline: none;
-}
-
-.submit-btn {
-  margin-top: 25px;
-  padding: 12px 20px;
-  width: 100%;
-  font-size: 1.1em;
-  background-color: #d2691e;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.submit-btn:hover {
-  background-color: #b15310;
-}
 
 /* Responsive tweaks */
 @media (max-width: 500px) {
