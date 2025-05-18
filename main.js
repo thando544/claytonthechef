@@ -329,5 +329,3 @@ $(document).ready(function(){
     }
   });
 });
-
-$('.owl-carousel').trigger('refresh.owl.carousel');
