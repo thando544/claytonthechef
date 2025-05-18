@@ -7,6 +7,7 @@ body {
    font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
  scroll-behavior: smooth;
   transition: all .9s ease;
 }
@@ -36,7 +37,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: 8vh;
+    height: 9vh;
     align-items: center;
     padding: 1.5rem 5%;
     background-color: white;
@@ -1111,150 +1112,6 @@ iframe {
 
 
 
-
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-/* Team Cards */
-.team-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.team-card {
-  background: #3b3b3b;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 300px;
-  color: white;
-  text-align: center;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.team-card img {
-  border-radius: 12px;
-  width: 170px;
-  object-position: center top;
-  height: 170px;
-  object-fit: contain;
-}
-
-.name {
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-
-.orange {
-  color: rgb(255, 72, 0);
-}
-
-.title {
-  font-size: 14px;
-  color: #ccc;
-}
-
-
-
-.bio {
-  position: absolute;
-  top: -11px;
-  left: 20px;
-  background: rgb(0, 0, 0);
-  color: white;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  overflow-y: auto;
-  border-radius: 12px;
-}
-
-.team-card:hover .bio {
-  opacity: 1;
-  visibility: visible;
-  background-color: #000000;
-}
-
-::-webkit-scrollbar{
-  opacity: 0;
-}
-
-
-
-.team-card:hover .bio {
-  opacity: 1;
-}
-
-.read-more {
-  background: #ff0000;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  margin-top: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.tagline{
-  color: #fff;
-}
-
-
-
-
-
-
-/*===================control the slider===============*/
-
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background-color: rgba(187, 101, 101, 0.173);
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.modal-content {
-  text-align: center;
-  background: rgb(255, 255, 255);
-  padding: 2rem;
-  color: #000000;
-  border-radius: 10px;
-  width: 90%;
-  z-index: 99999;
-  position: relative;
- height: 60vh;
- top: 50px;
-  overflow-y: auto;
-}
-
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 1rem;
-  font-weight: 900;
-  font-size: 24px;
-  color: #000000;
-  cursor: pointer;
-}
 
 .tesimonials{
   height: 30vh;
