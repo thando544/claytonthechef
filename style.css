@@ -1403,6 +1403,10 @@ background-size: cover;*/
             .footer-container {
                 grid-template-columns: 1fr;
             }
+
+            .footer-newsletter input{
+              width: 90%;
+            }
         }
 
 /*=============================break points=================================*/
