@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="contact.html" href="contact.html">
-<link rel="stylesheet" href="mordal.css">
+<link rel="stylesheet" href="contact.css">
 
 <!-- Owl Carousel CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -42,7 +40,7 @@
             <li><a href="contact.html">Contact</a></li>
             <li class="dropdown-container">
                 <div class="dropdown">
-                    <button class="dropdown-toggle">Main Chef's Shop<box-icon type='solid' name='down-arrow' id="drop"></box-icon></button>
+                    <button class="dropdown-toggle">Main Chef's Shop</button>
                     <div class="dropdown-menu">
                         <button onclick="openModal('modal1')">Chef Lindsy's Shop🧑‍🍳</button>
                    
@@ -50,12 +48,6 @@
                 </div>
             </li>
         </ul>
-
-        <div class="cart-icon">
-            <ion-icon name="cart-outline"></ion-icon>
-            <span class="cart-count" id="cart-count">0</span>
-          </div>
-
         <ul class="nav__socials">
             <li><a href="https://www.facebook.com/claytonmpofu.sikhosini.3/" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a></li>
             <li><a href="https://www.linkedin.com/in/clayton-mpofu-a434b9105/" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a></li>
@@ -68,78 +60,7 @@
             <span></span>
         </div>
     </nav>
-  <!--=========================Modal 1: Shop structure===================== -->
-<div id="modal1" class="modal">
-    <div class="modal-content shop-style">
-      <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
-      <div class="logovariation">
-        <a href="index.html"><img class="online-shop" src="images/lindsy-logo.png" alt="chef lindsy's online shoplogo"></a>
-        <p>Select a dish and add it to your cart:</p>
-</div>
-  <div class="product-grid">
-        <!-- Product Card -->
-        <div class="product-card">
-          <img src="images/breakfast__images/breakfast10.jpg" alt="Dish 1" />
-          <h4>Breakfast Masterclass</h4>
-          <p>$20</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-  
-        <div class="product-card">
-          <img src="images/breakfast__images/breakfast10.jpg" alt="Dish 2" />
-          <h4>Vegan Workshop</h4>
-          <p>$25</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-  
-        <div class="product-card">
-          <img src="images/breakfast__images/breakfast10.jpg" alt="Dish 3" />
-          <h4>Dessert Secrets</h4>
-          <p>$30</p>
-          <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product-card">
-            <img src="images/breakfast__images/breakfast10.jpg" alt="Dish 2" />
-            <h4>Vegan Workshop</h4>
-            <p>$25</p>
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
 
-
-          <div class="product-card">
-            <img src="images/breakfast__images/breakfast10.jpg" alt="Dish 2" />
-            <h4>Vegan Workshop</h4>
-            <p>$25</p>
-            <button class="add-to-cart">Add to Cart</button>
-          </div>
-      </div>
-    </div>
-
-    <div id="cart-panel" class="cart-panel">
-        <h3>Your Cart</h3>
-        <ul id="cart-items"></ul>
-        <p>Total: $<span id="cart-total">0</span></p>
-        <button onclick="redirectToCheckout()">Proceed to Pay</button>
-      </div>
-
-
-      <div id="payment-modal" class="modal">
-        <div class="modal-content">
-          <span class="close-btn" onclick="closeModal('payment-modal')">&times;</span>
-          <h2>Choose Payment Method</h2>
-      
-          <form id="payment-form">
-            <label><input type="radio" name="payment-method" value="ecocash" required> EcoCash</label><br>
-            <label><input type="radio" name="payment-method" value="paypal"> PayPal</label><br>
-            <label><input type="radio" name="payment-method" value="innbucks"> InnBucks</label><br>
-      
-            <input type="email" id="user-email" placeholder="Enter your email" required style="margin-top: 1rem; width: 100%; padding: 8px;"><br>
-      
-            <button type="submit" style="margin-top: 1rem;">Pay Now</button>
-          </form>
-        </div>
-      </div>
-  </div>
 
 <!--====================banner==================-->
 <div class="banner" id="home">
@@ -521,17 +442,11 @@
 </div>
 </div>
 </section>
-
-<section class="tesimonials">
-<button id="openTeamModal">Gratitude & Acknowledgement</button>
-
-<!-- Modal Structure -->
-<div id="teamModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
+<!--===================testimonials================-->
+<div class="modal-content">
     <h3 class="modal-quote">"Just as salt enhances flavor, my wife, friends, mentors and family have brought depth to my craft"</h3>
     
-    <div class="owl-carousel team-carousel">
+    <div class="owl">
       <!-- Card 1 -->
       <div class="item">
         <div class="team-card">
@@ -630,8 +545,6 @@ Thank you, Traicos, for being an irreplaceable part of my journey.
       </div>
     </div>
   </div>
-</div>
-</section>
 <!--====================================footer=====================================-->
 <footer class="footer">
         <div class="footer-container">
@@ -645,7 +558,7 @@ Thank you, Traicos, for being an irreplaceable part of my journey.
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Menu</a></li>
-                    <li><a href="#">About Chef</a></li>
+                    <li><a href="#about__chefclayton.co.zw">About Chef</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -666,7 +579,7 @@ Thank you, Traicos, for being an irreplaceable part of my journey.
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 . All Rights Reserved. | Developed <i class="fas fa-heart" style="color: #fc1100;"></i> by <a href="mailto:mpofu7085@gmail.com">Thando</a></p>
+            <p>&copy; 2025 . All Rights Reserved. | Developed <i class="fas fa-heart" style="color: #fc1100;"></i> by <a href="https://wa.me/+263 78 032 8658">Thando</a></p>
         </div>
     </footer>
 <!-- jQuery (required) -->
