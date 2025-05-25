@@ -183,7 +183,14 @@ form .row{
     flex-direction: column;
 }
 
+  .rotate h2 {
+    font-size: 2.5vw;
+  }
 
+  .testimonial--content{
+    display: grid;
+    grid-template-columns: auto;
+  }
 
 }
 
@@ -195,6 +202,8 @@ form .row{
   gap: 2rem;
   padding: 4rem 2rem;
   background-color: #f7f5f2;
+  align-items: center;
+  flex-direction: column;
 }
 
 .testimonial {
@@ -231,4 +240,41 @@ form .row{
   color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.rotate h2 {
+  width: 100%;
+  background-color: #d90000;
+  color: #000;
+  position: relative; /* change to relative */
+  overflow: hidden;
+}
+
+.rotate h2 span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+.testimonial-section p{
+  color: #000;
+  text-align: center;
+}
+
+.testimopnial--content{
+grid-template-columns: auto auto auto;
+display: grid;
+gap: 1.2rem;
 }

@@ -780,7 +780,7 @@ iframe {
   gap: 2rem;
   width: 100%;
   padding: 3rem 2rem;
-  background-color: #ffffff;
+  background-color: #fff3ec;
   border-radius: 12px;
   margin: 4rem auto;
   max-width: 1200px;
@@ -829,7 +829,7 @@ iframe {
 }
 
 .cta-button:hover {
-  background-color: #dc1600;
+  background-color: #a33225;
 }
 
 .chef-offerings-section {
@@ -843,7 +843,7 @@ iframe {
   text-align: center;
   font-size: 48px;
   margin-bottom: 40px;
-  color: #333;
+  color: #ffffff;
   animation: fadeIn 1s ease forwards;
 }
 
@@ -856,7 +856,7 @@ iframe {
 }
 
 .offering-card {
-  background: #ffffff;
+  background: #f7f7f7;
 
   backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -885,7 +885,7 @@ iframe {
 /* Philosophy and Call to Action */
 .philosophy,
 .call-to-action {
-  background: #f7f7f7;
+  background: #ffffff;
 text-align: center;
   backdrop-filter: blur(10px);
   padding: 40px;
@@ -2070,13 +2070,19 @@ padding: 0px 0px;
 
 /*=======testimonials============*/
 
- 
 }
 
 
 
 /*==============================extra small screens=================================*/
 @media (max-width: 490px) {
+
+  
+ .testimopnial--content{
+  display: grid;
+  grid-template-columns: auto;
+  border: 1px solid red;
+ }
 
   .logo {
     margin-left: 12px;
