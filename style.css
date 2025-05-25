@@ -2081,7 +2081,7 @@ padding: 0px 0px;
  .testimopnial--content{
   display: grid;
   grid-template-columns: auto;
-  border: 1px solid red;
+  column-gap: 1rem;
  }
 
   .logo {

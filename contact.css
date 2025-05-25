@@ -190,6 +190,7 @@ form .row{
   .testimonial--content{
     display: grid;
     grid-template-columns: auto;
+    gap: 1.2rem;
   }
 
 }
@@ -243,7 +244,8 @@ form .row{
 }
 
 .rotate h2 {
-  width: 100%;
+  width: 80vw;
+  left: 0;
   background-color: #d90000;
   color: #000;
   position: relative; /* change to relative */
