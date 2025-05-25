@@ -763,7 +763,7 @@ iframe {
 /*=================================menoring===========================================*/
 
 .coarching {
-  background-color: rgb(220, 212, 212);
+  background-color: rgb(0, 0, 0);
   height: auto;
   padding-bottom: 2rem;
   display: flex;
@@ -780,7 +780,7 @@ iframe {
   gap: 2rem;
   width: 100%;
   padding: 3rem 2rem;
-  background-color: #fff3ec;
+  background-color: #ffffff;
   border-radius: 12px;
   margin: 4rem auto;
   max-width: 1200px;
@@ -829,7 +829,7 @@ iframe {
 }
 
 .cta-button:hover {
-  background-color: #a33225;
+  background-color: #dc1600;
 }
 
 .chef-offerings-section {
@@ -856,7 +856,7 @@ iframe {
 }
 
 .offering-card {
-  background: #f7f7f7;
+  background: #ffffff;
 
   backdrop-filter: blur(10px);
   border-radius: 20px;
