@@ -167,7 +167,7 @@ form button:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
-        border: 2px solid red;
+
     }
 
     .contact-form {
@@ -182,8 +182,10 @@ form .row{
     display: flex;
     flex-direction: column;
 }
+.rotate{
 
-
+  width: 90%;
+}
 
 }
 
@@ -252,11 +254,17 @@ form .row{
   box-sizing: border-box;
 }
 
-.testimonial-section p{
+.testimonial-section h3{
   color: #000;
   text-align: center;
+
+  width: 100%;
 }
 
+.rotate{
+
+  width: 100%;
+}
 
 .rotate h2 {
   width: 100%;
@@ -264,8 +272,9 @@ form .row{
   color: #000;
   position: relative;
   overflow: hidden;
-  font-size: 2vw; /* responsive font size */
+  font-size: 5vw; /* responsive font size */
   padding: 10px 0;
+  font-size: 1.2rem;
   text-align: left;
 }
 
@@ -273,11 +282,12 @@ form .row{
   display: inline-block;
   white-space: nowrap;
   animation: slide 10s linear infinite;
+
 }
 
 @keyframes slide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(440%);
   }
 
   100% {
