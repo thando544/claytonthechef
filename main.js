@@ -209,61 +209,28 @@ function updateCartUI() {
   cartTotal.textContent = total.toFixed(2);
 }
 
-function redirectToCheckout() {
-  // Example: redirect to PayPal/Stripe/PayNow
-  // For now, just simulate
-  alert('Redirecting to payment...');
-  window.location.href = "https://www.paynow.co.zw/PaymentMethod#"; // Replace with real
-}
-
-
-/*======================cart activation==========================*/
-
-
-
 /*==========================*/
-const cart1 = []; // This should store your added items
 
-function openPaymentModal() {
-  document.getElementById("payment-modal").style.display = "block";
-}
 
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
 
-document.getElementById("payment-form").addEventListener("submit", function (e) {
-  e.preventDefault();
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 
-  const selectedMethod = document.querySelector('input[name="payment-method"]:checked').value;
-  const userEmail = document.getElementById("user-email").value;
 
-  // Example: redirect based on method
-  if (selectedMethod === "paypal") {
-    window.location.href = "https://www.paypal.com/checkoutnow"; // Replace with real link
-  } else if (selectedMethod === "ecocash" || selectedMethod === "innbucks") {
-    // Use Paynow redirect
-    fetch("paynow_checkout.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        cart1: cart1,
-        email: userEmail,
-        method: selectedMethod
-      }),
-    })
-    .then((res) => res.json())
-    .then((data) => {
-      if (data.redirect_url) {
-        window.location.href = data.redirect_url;
-      } else {
-        alert("Payment failed. Try again.");
-      }
-    });
-  }
-});
 
 
 
@@ -313,16 +280,4 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
 });
 
 
-/*==============owl carousel===================*/
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      responsive:{
-        0:{ items:1 },
-        600:{ items:2 },
-        1000:{ items:3 }
-      }
-    });
-  });
+
