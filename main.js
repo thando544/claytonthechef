@@ -6,3 +6,40 @@ for(let i=0;i<dots.length;i++){dots[i].className=dots[i].className.replace(" act
 slides[currentSlide-1].style.display="block";dots[currentSlide-1].className+=" active"}
 const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show')}else{entry.target.classList.remove('show')}})},{threshold:0.2,});const imageContainers=document.querySelectorAll('.image-container');imageContainers.forEach(container=>{observer.observe(container)});document.addEventListener('DOMContentLoaded',function(){const tabs=document.querySelectorAll('.tab');const contents=document.querySelectorAll('.content');tabs.forEach(tab=>{tab.addEventListener('click',function(){tabs.forEach(t=>t.classList.remove('active'));contents.forEach(c=>c.classList.remove('active'));tab.classList.add('active');const tabId=tab.getAttribute('data-tab');document.getElementById(tabId).classList.add('active')})});tabs[0].click()});window.addEventListener('scroll',function(){const elements=document.querySelectorAll('.fade-in');const windowHeight=window.innerHeight;elements.forEach(element=>{const elementTop=element.getBoundingClientRect().top;if(elementTop<windowHeight){element.classList.add('visible')}else{element.classList.remove('visible')}})});function myFunction(){var element=document.portfolio;element.classList.toggle("dark-mode")}
 function toggleReadMore(){var dots=document.getElementById("dots");var more=document.getElementById("more");var btn=document.getElementById("myBtn");if(more.style.display==="inline"){more.style.display="none";dots.style.display="inline";btn.textContent="Read more"}else{more.style.display="inline";dots.style.display="none";btn.textContent="Read less"}}
+
+/*===================text auto type===============*/
+
+const textArray = ["Creativity ","+", " love for food", "=", "career as a chef"];
+let index = 0;
+let charIndex = 0;
+const typingSpeed = 100;
+const eraseSpeed = 50;
+const delayBetween = 2000; // Delay before next word
+
+const typedText = document.getElementById("typed-text");
+
+function type() {
+  if (charIndex < textArray[index].length) {
+    typedText.textContent += textArray[index].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    setTimeout(erase, delayBetween);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    typedText.textContent = textArray[index].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, eraseSpeed);
+  } else {
+    index = (index + 1) % textArray.length;
+    setTimeout(type, typingSpeed);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(type, 1000);
+});
+
